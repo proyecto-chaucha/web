@@ -1,0 +1,23 @@
+body {	
+	font-family: 'Press Start 2P', cursive;
+	font-size: 13px;
+    color: #0de5a8;
+    background: #F7FDFA;
+}
+
+h1 {
+	color: #FF1F4C;
+	margin: 1;
+}
+
+h2 {
+	color: #1fc999;
+	font-weight: lighter;
+	margin: 1;
+}
+
+
+a:link {text-decoration: none; font-weight: bold; color: #FF1F4C;}
+a:visited {text-decoration: none; font-weight: bold; color: #FF1F4C;}
+a:hover {text-decoration: none; font-weight: bold; color: #FF1F4C;}
+a:active {text-decoration: none; font-weight: bold; color: #FF1F4C;}
