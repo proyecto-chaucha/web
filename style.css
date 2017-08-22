@@ -13,6 +13,7 @@ li {
 li:before {
     content: "> ";
     font-weight: bolder;
+    font-size: 15px;
     vertical-align: middle;
     line-height: 20px;
 }
