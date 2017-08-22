@@ -1,23 +1,70 @@
 body {	
 	font-family: 'Press Start 2P', cursive;
-	font-size: 12px;
-    color: #0de5a8;
-    background: #F7FDFA;
+	font-size: 10px;
+    color: #595B5A;
+    background: #faffff;
+}
+
+li {
+	list-style-type: none;
+	padding: 5px;
+}
+
+li:before {
+    content: "> ";
+    font-weight: bolder;
+    vertical-align: middle;
+    line-height: 20px;
 }
 
 h1 {
 	color: #F71568;
-	margin: 1;
+	margin: 5px;
+	font-weight: bolder;
+	font-size: 48px;
 }
 
 h2 {
-	color: #1fc999;
+	color: #0de5a8;
 	font-weight: lighter;
-	margin: 1;
+	margin: 5px;
+	font-size: 17px;
+}
+
+h3 {
+	text-align: center;
+	color: #F71568;
+	font-size: 26px;
+}
+
+b {
+	color: #F71568;
+}
+
+td {
+	padding: 10px;
+}
+
+#banner {
+	text-align: center;
+}
+
+#data_proj {
+    text-align: justify;
+    width: 78%;
+
+    margin: 45px;
 }
 
 
-a:link {text-decoration: none; font-weight: bold; color: #F71568;}
-a:visited {text-decoration: none; font-weight: bold; color: #F71568;}
-a:hover {text-decoration: none; font-weight: bold; color: #F71568;}
-a:active {text-decoration: none; font-weight: bold; color: #F71568;}
+#data_spec {
+    text-align: justify;
+    width: 55%;
+    margin: 45px;
+}
+
+
+a:link {font-weight: bold; color: #F71568;}
+a:visited {font-weight: bold; color: #F71568;}
+a:hover {font-weight: bold; color: #F71568;}
+a:active {font-weight: bold; color: #F71568;}
