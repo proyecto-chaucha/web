@@ -7,10 +7,9 @@
 	<link href="./favicon.ico" rel="icon" type="image/x-icon">
 
 	<meta charset="UTF-8">
-	<meta name="description" content="Próximamente">
+	<meta name="description" content="Una criptomoneda bien bonita">
 	<meta name="keywords" content="chaucha, cryptocurrency, chauchera">
 	<meta name="author" content="César Vásquez C.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <center>
@@ -21,7 +20,7 @@
 		</td>
 		<td id="banner">
 			<h1>Proyecto Chaucha</h1>
-			<h2>Una criptomoneda bien bonita</h2>
+			<h2 id="motto">una criptomoneda bien bonita</h2>
 			<br>
 			<a href="/">Inicio</a> |
 			<a href="/downloads">Descargas</a> |
@@ -40,5 +39,28 @@
 	<li>La Red Chaucha esta basada en <a href="https://litecoin.org/" target="_blank">Litecoin</a>.</li>
 </div>
 </center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	var timer = setInterval(refresh, 5000);
+
+	var motto = [
+	"una criptomoneda bien bonita", 
+	"le chauché proyecté",
+	"dejale caer to' el peso",
+	"no se me ocurre que escribir xddd",
+	"lucho jara fan club",
+	"mucho cooking chicken in the kitchen",
+	"sushi? sushimbombo",
+	"por la razón o la chaucha",
+	"cWjzyUJaAGzCMj7FpvSovG5r9HeFafz1E3"
+	];
+
+	function refresh () {
+		var rnd = Math.floor(Math.random()*motto.length);
+		$("#motto").html(motto[rnd]);
+	}
+</script>
 </body>
 </html>
