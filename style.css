@@ -23,6 +23,7 @@ h1 {
 	margin: 5px;
 	font-weight: bolder;
 	font-size: 48px;
+	text-shadow: 2px 2px #eeeeee;
 }
 
 h2 {
@@ -30,12 +31,14 @@ h2 {
 	font-weight: lighter;
 	margin: 5px;
 	font-size: 17px;
+	text-shadow: 2px 2px #eeeeee;
 }
 
 h3 {
 	text-align: center;
 	color: #F71568;
 	font-size: 26px;
+	text-shadow: 2px 2px #eeeeee;
 }
 
 b {
