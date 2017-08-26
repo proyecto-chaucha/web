@@ -42,9 +42,6 @@ b {
 	color: #F71568;
 }
 
-td {
-	padding: 10px;
-}
 
 #banner {
 	text-align: center;
@@ -54,6 +51,14 @@ td {
     text-align: center;
     width: 55%;
     margin: 45px;
+}
+
+
+#manifesto {
+  text-align: justify;
+  margin: 0 auto;
+  width: 80em;
+  line-height: 180%;
 }
 
 
