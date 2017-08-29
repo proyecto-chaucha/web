@@ -1,0 +1,87 @@
+body {	
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+    color: #595B5A;
+    background: #faffff;
+}
+
+li {
+	list-style-type: none;
+	padding: 5px;
+}
+
+li:before {
+    content: "> ";
+    font-weight: bolder;
+    font-size: 15px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+h1 {
+	color: #F71568;
+	margin: 5px;
+	font-weight: bolder;
+	font-size: 48px;
+	text-shadow: 2px 2px #eeeeee;
+}
+
+h2 {
+	color: #0de5a8;
+	font-weight: lighter;
+	margin: 5px;
+	font-size: 17px;
+	text-shadow: 2px 2px #eeeeee;
+}
+
+h3 {
+	text-align: center;
+	color: #F71568;
+	font-size: 26px;
+	text-shadow: 2px 2px #eeeeee;
+}
+
+b {
+	color: #F71568;
+}
+
+
+#banner {
+	text-align: center;
+}
+
+#data_spec {
+    text-align: center;
+  	width: 96em;
+    margin: 45px;
+}
+
+
+#manifesto {
+  text-align: justify;
+  margin: 0 auto;
+  width: 80em;
+  line-height: 180%;
+}
+
+#main {
+  text-align: center;
+  margin: 0 auto;
+  width: 80em;
+  line-height: 180%;
+}
+
+#credits {
+  color: #F71568;
+  text-align: center;
+  font-size: 9px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 40em;
+  line-height: 180%;
+}
+
+a:link {font-weight: bold; color: #F71568;}
+a:visited {font-weight: bold; color: #F71568;}
+a:hover {font-weight: bold; color: #F71568;}
+a:active {font-weight: bold; color: #F71568;}
