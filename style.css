@@ -52,7 +52,7 @@ b {
 
 #data_spec {
     text-align: center;
-  	width: 80em;
+  	width: 96em;
     margin: 45px;
 }
 
@@ -64,6 +64,22 @@ b {
   line-height: 180%;
 }
 
+#main {
+  text-align: center;
+  margin: 0 auto;
+  width: 80em;
+  line-height: 180%;
+}
+
+#credits {
+  color: #F71568;
+  text-align: center;
+  font-size: 9px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 40em;
+  line-height: 180%;
+}
 
 a:link {font-weight: bold; color: #F71568;}
 a:visited {font-weight: bold; color: #F71568;}

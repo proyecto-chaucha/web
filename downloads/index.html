@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto Chaucha</title>
+	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet'>
+	<link href='./style.css' rel='stylesheet'>
+	<link href="./favicon.ico" rel="icon" type="image/x-icon">
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Una criptomoneda bien bonita">
+	<meta name="keywords" content="chaucha, cryptocurrency, chauchera">
+	<meta name="author" content="César Vásquez C.">
+</head>
+<body>
+<center>
+<table>
+	<tr>
+		<td>
+			<img src="./chaucha.png" width="220" height="220">
+		</td>
+		<td id="banner">
+			<h1>Proyecto Chaucha</h1>
+			<h2 id="motto">una criptomoneda bien bonita</h2>
+			<br>
+			<a href="/">Inicio</a> |
+			<a href="/downloads">Descargas</a> |
+			<a href="/social">Redes sociales</a> |
+			<a href="about">Acerca de</a>
+		</td>
+	</tr>
+</table>
+<div id="manifesto">
+<h3>Descargas</h3>
+&emsp;&emsp;&emsp;&emsp;<b>Chauchera</b> es el cliente utilizado para la conexión a la <b>Red Chaucha</b>, que permite almacenar tus Chauchas de manera segura. Este cliente fue compilado exclusivamente para sistemas de <b>64 bits</b>.
+</div>
+<br>
+<div id="main">
+<a href="chaucha_qt">Linux</a><br>
+<a href="chaucha_qt.exe">Windows</a><br>
+<a href="chaucha_qt">OSX</a><br>
+</div>
+<br>
+<div id="manifesto">
+<h3>Código Fuente</h3>
+&emsp;&emsp;&emsp;&emsp;El codigo fuente de Chauchera fue alojado en los servidores de <b>Gitlab</b> para proteger el desarrollo del Proyecto Chaucha de un <b>Bot ruso</b> que intentó robarse los primeros bloques generados por la red. En estos momentos la red ya entró a una <b>fase estable de minado</b>, pero de todas maneras dejaré alojado el código fuente en gitlab.<br>
+<br>
+<div id="main">
+<a href="gitlab.com/chaucha/chauchera" target="_blank">Repositorio de Chauchera</a>
+</div>
+<br><br>
+<div id="manifesto">
+&emsp;&emsp;&emsp;&emsp;Si deseas utilizar la versión de consola de Chauchera, o deseas modificar el codigo fuente para <b>mejorar tu experiencia</b> en la Red Chaucha, te recomiendo compilar desde la distribución <b>Ubuntu 14.04</b>, porque da menos problemas de compatibilidad.<br>
+</div>
+<br><br><br><br>
+<p id="credits">Creado por César Vásquez C.<br>Con apoyo de <a href="https://ninjas.cl/" target="_blank">Camilo Castro</a> e <a href="https://www.indexar.cl/" target="_blank">Indexar.cl</a></p>
+<br>
+</center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	var timer = setInterval(refresh, 5000);
+
+	var motto = [
+	"una criptomoneda bien bonita", 
+	"le chauché proyecté",
+	"dejale caer to' el peso",
+	"no se me ocurre que escribir",
+	"por la razón o la chaucha",
+	"aqui no se cae el sistema"
+	];
+
+	function refresh () {
+		var rnd = Math.floor(Math.random()*motto.length);
+		$("#motto").html(motto[rnd]);
+	}
+</script>
+</body>
+</html>
