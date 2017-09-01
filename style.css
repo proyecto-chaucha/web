@@ -62,6 +62,20 @@ b {
     margin: 45px;
 }
 
+#logo {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  margin: 0px;
+}
+
+#menu {
+  display:inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 25px;
+
+}
 
 #justified {
   text-align: justify;

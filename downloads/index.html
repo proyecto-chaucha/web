@@ -3,7 +3,7 @@
 <head>
 	<title>Proyecto Chaucha</title>
 	<link href='../style.css' rel='stylesheet'>
-	<link href=".../favicon.ico" rel="icon" type="image/x-icon">
+	<link href="../favicon.ico" rel="icon" type="image/x-icon">
 
 	<meta charset="UTF-8">
 	<meta name="description" content="Una criptomoneda bien bonita">
@@ -12,77 +12,59 @@
 </head>
 <body>
 <center>
-<table>
-	<tr>
-		<td>
-			<img src="../chaucha.png" width="160" height="160">
-		</td>
-		<td id="banner">
-			<h1>Proyecto Chaucha</h1>
-			<div id="links">
-			<h2 id="motto">una criptomoneda bien bonita</h2>
-			<br>
-			<a href="/">Inicio</a> |
-			<a href="/downloads">Descargas</a> |
-			<a href="/social">Redes sociales</a> |
-			<a href="about">Acerca de</a>
-			</div>
-		</td>
-	</tr>
-</table>
+
+<div id="logo">
+	<img src="../chaucha.png" width="160" height="160">
+</div>
+
+<div id="menu">
+	<h1>Proyecto Chaucha</h1>
+	<div id="links">
+		<h2 id="motto">una criptomoneda bien bonita</h2>
+		<br>
+		<a href="/">Inicio</a> |
+		<a href="/downloads">Descargas</a> |
+		<a href="/social">Redes sociales</a> |
+		<a href="about">Acerca de</a>
+	</div>
+</div>
+
 <div id="justified">
-<h3>Descargas</h3>
-&emsp;&emsp;&emsp;&emsp;<b>Chauchera</b> es el cliente utilizado para la conexión a la <b>Red Chaucha</b>, que permite almacenar tus Chauchas de manera segura. Este cliente fue compilado exclusivamente para sistemas de <b>64 bits</b>.
+	<h3>Descargas</h3>
+	&emsp;&emsp;&emsp;&emsp;<b>Chauchera</b> es el cliente utilizado para la conexión a la <b>Red Chaucha</b>, que permite almacenar tus Chauchas de manera segura. Este cliente fue compilado exclusivamente para sistemas de <b>64 bits</b>.
+	</div>
+
+	<br>
+
+	<div id="main">
+	<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-linux64.zip">Linux</a><br>
+	<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-win64.zip">Windows</a><br>
+	<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-macos.zip">MacOS (OSX)</a><br>
+</div>
+
+<br>
+
+<div id="justified">
+	<h3>Código Fuente</h3>
+	&emsp;&emsp;&emsp;&emsp;El codigo fuente de Chauchera fue alojado en los servidores de <b>Gitlab</b> para proteger el desarrollo del Proyecto Chaucha de un <b>Bot ruso</b> que intentó robarse los primeros bloques generados por la red. En estos momentos la red ya entró a una <b>fase estable de minado</b>, pero de todas maneras dejaré alojado el código fuente en gitlab.
 </div>
 
 <br>
 
 <div id="main">
-<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-linux64.zip">Linux</a><br>
-<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-win64.zip">Windows</a><br>
-<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-macos.zip">MacOS (OSX)</a><br>
+	<a href="http://gitlab.com/chaucha/chauchera" target="_blank">Repositorio de Chauchera</a>
 </div>
 
 <br>
 
 <div id="justified">
-<h3>Código Fuente</h3>
-&emsp;&emsp;&emsp;&emsp;El codigo fuente de Chauchera fue alojado en los servidores de <b>Gitlab</b> para proteger el desarrollo del Proyecto Chaucha de un <b>Bot ruso</b> que intentó robarse los primeros bloques generados por la red. En estos momentos la red ya entró a una <b>fase estable de minado</b>, pero de todas maneras dejaré alojado el código fuente en gitlab.
-</div>
-
-<br>
-
-<div id="main">
-<a href="http://gitlab.com/chaucha/chauchera" target="_blank">Repositorio de Chauchera</a>
-</div>
-
-<br>
-
-<div id="justified">
-&emsp;&emsp;&emsp;&emsp;Si deseas utilizar la <b>versión de consola</b> de Chauchera, o deseas modificar el codigo fuente para <b>mejorar tu experiencia</b> en la Red Chaucha, te recomiendo compilar desde la <b>distribución Ubuntu 14.04</b>, porque da menos problemas de compatibilidad.<br>
+	&emsp;&emsp;&emsp;&emsp;Si deseas utilizar la <b>versión de consola</b> de Chauchera, o deseas modificar el codigo fuente para <b>mejorar tu experiencia</b> en la Red Chaucha, te recomiendo compilar desde la <b>distribución Ubuntu 14.04</b>, porque da menos problemas de compatibilidad.<br>
 </div>
 <br><br><br>
 <p id="credits">2017 - <a href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">César Vásquez C</a><br>Con apoyo de <a href="https://ninjas.cl/" target="_blank">Camilo Castro</a> e <a href="https://www.indexar.cl/" target="_blank">Indexar</a></p>
 </center>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-	var timer = setInterval(refresh, 5000);
-
-	var motto = [
-	"una criptomoneda bien bonita", 
-	"le chauché proyecté",
-	"dejale caer to' el peso",
-	"no se me ocurre que escribir",
-	"por la razón o la chaucha",
-	"aqui no se cae el sistema"
-	];
-
-	function refresh () {
-		var rnd = Math.floor(Math.random()*motto.length);
-		$("#motto").html(motto[rnd]);
-	}
-</script>
+<script type="text/javascript" src="../motto.js"></script>
 </body>
 </html>

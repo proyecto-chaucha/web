@@ -12,28 +12,26 @@
 </head>
 <body>
 <center>
-<table>
-	<tr>
-		<td>
-			<img src="./chaucha.png" width="160" height="160">
-		</td>
-		<td id="banner">
-			<h1>Proyecto Chaucha</h1>
-			<div id="links">
-			<h2 id="motto">una criptomoneda bien bonita</h2>
-			<br>
-			<a href="/">Inicio</a> |
-			<a href="/downloads">Descargas</a> |
-			<a href="/social">Redes sociales</a> |
-			<a href="about">Acerca de</a>
-			</div>
-		</td>
-	</tr>
-</table>
+
+<div id="logo">
+	<img src="../chaucha.png" width="160" height="160">
+</div>
+
+<div id="menu">
+	<h1>Proyecto Chaucha</h1>
+	<div id="links">
+		<h2 id="motto">una criptomoneda bien bonita</h2>
+		<br>
+		<a href="/">Inicio</a> |
+		<a href="/downloads">Descargas</a> |
+		<a href="/social">Redes sociales</a> |
+		<a href="about">Acerca de</a>
+	</div>
+</div>
+
 <div id="justified">
-<h3>¿Qué es el Proyecto Chaucha?</h3>
-&emsp;&emsp;&emsp;&emsp;El objetivo principal del Proyecto Chaucha es <b>educar</b> a la población Chilena sobre la utilización de criptomonedas, proponiendo un sistema monetario <b>confiable</b>, <b>transparente</b> y <b>descentralizado</b>, junto con la 
-documentación necesaria para comprender de manera simple el funcionamiento de la red y la tecnología utilizada.
+	<h3>¿Qué es el Proyecto Chaucha?</h3>
+	&emsp;&emsp;&emsp;&emsp;El objetivo principal del Proyecto Chaucha es <b>educar</b> a la población Chilena sobre la utilización de criptomonedas, proponiendo un sistema monetario <b>confiable</b>, <b>transparente</b> y <b>descentralizado</b>, junto con la documentación necesaria para comprender de manera simple el funcionamiento de la red y la tecnología utilizada.
 </div>
 
 <div id="data_spec">
@@ -46,28 +44,11 @@ documentación necesaria para comprender de manera simple el funcionamiento de l
 	<li>El <b>máximo de Chauchas</b> que existirán en la red es de <b>123.456.789 CHA</b>.</li>
 	<li>La Red Chaucha está basada en <a href="https://litecoin.org/" target="_blank">Litecoin</a>.</li>
 </div>
+
 <p id="credits">2017 - <a href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">César Vásquez C</a><br>Con apoyo de <a href="https://ninjas.cl/" target="_blank">Camilo Castro</a> e <a href="https://www.indexar.cl/" target="_blank">Indexar</a></p>
 </center>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-	var timer = setInterval(refresh, 5000);
-
-	var motto = [
-	"una criptomoneda bien bonita", 
-	"le chauché proyecté",
-	"dejale caer to' el peso",
-	"no se me ocurre que escribir",
-	"por la razón o la chaucha",
-	"aqui no se cae el sistema",
-	"jonny 100 chauchas"
-	];
-
-	function refresh () {
-		var rnd = Math.floor(Math.random()*motto.length);
-		$("#motto").html(motto[rnd]);
-	}
-</script>
+<script src="./motto.js"></script>
 </body>
 </html>
