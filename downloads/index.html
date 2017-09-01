@@ -24,8 +24,8 @@
 		<br>
 		<a href="/">Inicio</a> |
 		<a href="/downloads">Descargas</a> |
-		<a href="/social">Redes sociales</a> |
-		<a href="about">Acerca de</a>
+		<a href="/docs">Documentación</a> |
+		<a href="/social">Redes sociales</a>
 	</div>
 </div>
 
@@ -40,26 +40,33 @@
 	<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-linux64.zip">Linux</a><br>
 	<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-win64.zip">Windows</a><br>
 	<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-macos.zip">MacOS (OSX)</a><br>
+	<a href="http://gitlab.com/chaucha/chauchera" target="_blank">Código Fuente</a>
 </div>
-
-<br>
 
 <div id="justified">
-	<h3>Código Fuente</h3>
-	&emsp;&emsp;&emsp;&emsp;El codigo fuente de Chauchera fue alojado en los servidores de <b>Gitlab</b> para proteger el desarrollo del Proyecto Chaucha de un <b>Bot ruso</b> que intentó robarse los primeros bloques generados por la red. En estos momentos la red ya entró a una <b>fase estable de minado</b>, pero de todas maneras dejaré alojado el código fuente en gitlab.
+	<h3>Como minar Chauchas</h3>
+	&emsp;&emsp;&emsp;&emsp;La Red Chaucha utiliza el algoritmo de distribución <b>Proof of Work</b> (PoW), que entrega una cantidad definida de Chauchas al usuario que logre resolver un <b>puzzle criptografico</b> a traves de un proceso de fuerza bruta. Este proceso es llamado comúnmente como <b>minar una criptomoneda</b>.<br><br>
+	&emsp;&emsp;&emsp;&emsp;El mayor problema de este algoritmo es la <b>competencia</b>, a partir de que usuarios con <b>bajo poder de cómputo</b> nunca podrán resolver un bloque por si mismos, y por ende nunca podrán obtener el botín que genera la red.<br><br>
+	&emsp;&emsp;&emsp;&emsp;Para resolver este problema, se utiliza una herramienta llamada <b>Mining Pool</b>, que concentra todo el poder de minado de <b>múltiples usuarios</b> en un solo cliente que mina un bloque, a modo de asegurar que la organización <b>obtenga la ganancia</b> del bloque, para luego ser <b>distribuida</b> entre los usuarios en base a su <b>participación en el minado</b> del bloque.<br>
 </div>
-
-<br>
 
 <div id="main">
-	<a href="http://gitlab.com/chaucha/chauchera" target="_blank">Repositorio de Chauchera</a>
+	<a href="http://pool.chaucha.cl/" target="_blank">Mining Pool oficial del Proyecto Chaucha</a><br>
+	<b>Algoritmo:</b> Scrypt<br><b>IP:</b> 174.138.59.111<br><b>Puerto:</b> 3032
 </div>
 
 <br>
-
+	
 <div id="justified">
-	&emsp;&emsp;&emsp;&emsp;Si deseas utilizar la <b>versión de consola</b> de Chauchera, o deseas modificar el codigo fuente para <b>mejorar tu experiencia</b> en la Red Chaucha, te recomiendo compilar desde la <b>distribución Ubuntu 14.04</b>, porque da menos problemas de compatibilidad.<br>
+	&emsp;&emsp;&emsp;&emsp;Si deseas minar Chauchas debes <b>conectarte</b> a la Mining Pool del proyecto con el <b>programa de minado</b> que soporte tu máquina. En la actualidad existe una <b>gran cantidad de alternativas</b> de software capaces de permitir la conexión a las Mining Pool para ofrecer tu poder de cómputo de <a href="https://github.com/ckolivas/cgminer" target="_blank">GPU</a> y <a href="https://github.com/pooler/cpuminer" target="_blank">CPU</a>.<br><br>
+	&emsp;&emsp;&emsp;&emsp;A modo de <b>agradecimiento</b> a los primeros "mineros" de la Red Chaucha, se modificó el algoritmo de generación de criptomonedas para entregar una <b>mayor ganancia en los primeros 50.000 bloques creados</b>. La fórmula para calcular la ganancia por bloque es el número entero de (49990/n + 10), y por esto, a partir del bloque <b>#50001</b> se fijará la recompensa en <b>10 CHA</b> por bloque minado.<br><br>
+<div>
+
+<div id="main">
+	<img src="distribucion.png"><br>
+	Gráfico de distribución de chauchas por bloque
 </div>
+
 <br><br><br>
 <p id="credits">2017 - <a href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">César Vásquez C</a><br>Con apoyo de <a href="https://ninjas.cl/" target="_blank">Camilo Castro</a> e <a href="https://www.indexar.cl/" target="_blank">Indexar</a></p>
 </center>
