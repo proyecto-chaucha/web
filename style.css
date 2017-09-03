@@ -42,10 +42,17 @@ h2 {
 
 h3 {
   font-family: 'Press Start 2P', cursive;
-	text-align: center;
-	color: #F71568;
-	font-size: 26px;
-	text-shadow: 2px 2px #eeeeee;
+  text-align: center;
+  color: #F71568;
+  font-size: 26px;
+  text-shadow: 2px 2px #eeeeee;
+}
+
+h4 {
+  font-family: 'Press Start 2P', cursive;
+  color: #F71568;
+  font-size: 14px;
+  text-shadow: 2px 2px #eeeeee;
 }
 
 b {
