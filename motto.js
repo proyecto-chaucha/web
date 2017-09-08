@@ -8,7 +8,8 @@
 	"no se me ocurre que escribir",
 	"por la razón o la chaucha",
 	"aqui no se cae el sistema",
-	"jhonny 100 chauchas"
+	"jhonny 100 chauchas",
+	"inserte frase publicitaria aqui"
 	];
 
 	function refresh () {
