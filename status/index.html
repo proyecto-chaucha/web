@@ -27,8 +27,8 @@
 <script type="text/javascript">
 var timer = setInterval(refresh, 5000);
 function refresh () {
-	$.getJSON("http://cors.io/?u=http://pool.chaucha.cl/api/stats", function(json) {
-		$.get( "http://cors.io/?u=http://explorer.chaucha.cl/api/getdifficulty", function(diff) {
+	$.getJSON("http://pool.chaucha.cl/api/stats", function(json) {
+		$.get( "http://explorer.chaucha.cl/api/getdifficulty", function(diff) {
 			$('#time').text(Math.round(diff * 100 * 71582788.3 / json['pools']['chaucha']['hashrate'])/100);
 			$('#diff').text(Math.round(diff*100)/100);
 			$('#workers').text(json['pools']['chaucha']['workerCount']);
@@ -37,9 +37,9 @@ function refresh () {
 		});
 	});
 	
-	$.get( "http://cors.io/?u=http://explorer.chaucha.cl/api/getblockcount", function(count) {
-		$.get("http://cors.io/?u=http://explorer.chaucha.cl/api/getblockhash?index=" + count, function(hash) {
-			$.getJSON("http://cors.io/?u=http://explorer.chaucha.cl/api/getblock?hash=" + hash, function (blockjson) {
+	$.get( "http://explorer.chaucha.cl/api/getblockcount", function(count) {
+		$.get("http://explorer.chaucha.cl/api/getblockhash?index=" + count, function(hash) {
+			$.getJSON("http://explorer.chaucha.cl/api/getblock?hash=" + hash, function (blockjson) {
 				$('#link').html('<a href="http://explorer.chaucha.cl/block/' + hash + '" target="_blank">Ver más en el Block Explorer</a>');
 				$('#hash').text(hash);
 				$('#count').text(count);
