@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Chaucha</title>
+	<title>Proyecto Chaucha</title>
 	<link href="./favicon.ico" rel="icon" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,12 +16,14 @@
 	@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Comfortaa');
 
 	.header-image {
-	    background-image: url("gplaypattern.png");
+	    background-image: url("bg.png");
 	    background-repeat: repeat;
+	}
+	.fucsia {
+		color: #F71568;
 	}
 	.PS2 {
 		font-family: 'Press Start 2P', cursive;
-			color: #F71568;
 		text-shadow: 2px 2px #eeeeee;
 	}
 	.comfortaa {
@@ -35,8 +37,8 @@
 		<div class="container">
 			<div class="navbar-brand">
 				<button class="button navbar-burger">
-					<span><a href="http://www.chaucha.cl/">Inicio</a></span>
-					<span><a href="http://www.chaucha.cl/downloads">Descargas</a></span>
+					<span></span>
+					<span></span>
 					<span></span>
 				</button>
 			</div>
@@ -85,12 +87,12 @@
 				<div class="navbar-end">
 					<a class="navbar-item" href="https://github.com/proyecto-chaucha/" target="_blank">
 						<span class="icon">
-							<i class="fa fa-lg fa-github"></i>
+							<i class="fa fa-lg fa-github-alt"></i>
 						</span>
 					</a>
 					<a class="navbar-item" href="https://facebook.com/proyectochaucha" target="_blank">
 						<span class="icon">
-							<i class="fa fa-lg fa-facebook"></i>
+							<i class="fa fa-lg fa-facebook-official"></i>
 						</span>
 					</a>
 					<a class="navbar-item" href="https://chaucha.slack.com" target="_blank">
@@ -107,7 +109,7 @@
 <section class="hero is-medium header-image">
 	<div class="hero-body">
 		<div class="container has-text-centered">
-			<h1 class="title PS2 is-size-3">Proyecto Chaucha</h1>
+			<h1 class="title PS2 fucsia is-size-3">Proyecto Chaucha</h1>
 			<h2 id="motto" class="subtitle comfortaa is-size-5">(insertar eslogan aquí)</h2>
 		</div>
 	</div>
@@ -119,11 +121,12 @@
 		<h1 class="title is-size-3">
 			¿Qué es el Proyecto Chaucha?
 		</h1>
-		<div class="columns is-mobile">
-			<div class="column is-narrow">
+		<div class="columns">
+			<div class="column is-narrow is-hidden-mobile">
 				<img src="chaucha.png" height="150" width="150">
 			</div>
 			<div class="column has-text-justified is-size-6">
+				<br>
 				<p>
 				El objetivo principal del Proyecto Chaucha es educar a la población Chilena sobre la utilización de criptomonedas, proponiendo un sistema monetario confiable, transparente y descentralizado, junto con la documentación necesaria para comprender de manera simple el funcionamiento de la red y la tecnología utilizada.
 				</p>
@@ -135,12 +138,29 @@
 <footer class="footer">
 	<div class="container">
 		<div class="content">
-			<p>
-				<strong>Proyecto Chaucha.</strong><br>
-				Fundado por <a href="http://jgthms.com">César Vásquez C</a>, 
-				en colaboración con <a href="http://www.ninjas.cl">Camilo Castro</a> e
-				<a href="https://www.indexar.cl/">Indexar</a>.
-			</p>
+			<nav class="level">
+				<div class="level-left">
+					<div class="level-item">
+						<p>
+							<strong>Proyecto Chaucha.</strong><br>
+							Fundado por <a href="https://medium.com/@z80">César Vásquez C.</a><br> 
+							en colaboración con <a href="http://www.ninjas.cl">Camilo Castro</a> e
+							<a href="https://www.indexar.cl/">Indexar</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="level-right">
+					<div class="level-item has-text-right">
+						<a href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">
+							<span class="icon">
+								<i class="fa fa-music fa-2x"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+
 		</div>
 	</div>
 </footer>
