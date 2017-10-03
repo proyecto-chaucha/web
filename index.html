@@ -1,56 +1,251 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Proyecto Chaucha</title>
-	<link href='./style.css' rel='stylesheet'>
 	<link href="./favicon.ico" rel="icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
 
-	<meta charset="UTF-8">
 	<meta name="description" content="Una criptomoneda bien bonita">
 	<meta name="keywords" content="chaucha, cryptocurrency, chauchera">
-	<meta name="author" content="César Vásquez C.">
+	<meta name="author" content="César Vásquez C.">	
+
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Comfortaa');
+
+	.header-image {
+	    background-image: url("bg.png");
+	    background-repeat: repeat;
+	}
+	.fucsia {
+		color: #F71568;
+	}
+	.PS2 {
+		font-family: 'Press Start 2P', cursive;
+		text-shadow: 2px 2px #eeeeee;
+	}
+	.comfortaa {
+		font-family: 'Comfortaa', cursive;
+	}
+	</style>
 </head>
 <body>
-<center>
+<section>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-brand">
+				<div id="navbar-burger" class="navbar-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 
-<div id="logo">
-	<img src="./chaucha.png" width="160" height="160">
-</div>
+			<div class="navbar-menu" id="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="http://www.chaucha.cl/">
+						Inicio
+					</a>
 
-<div id="menu">
-	<h1>Proyecto Chaucha</h1>
-	<div id="links">
-		<h2 id="motto">una criptomoneda bien bonita</h2>
-		<br>
-		<a href="/">Inicio</a> |
-		<a href="/downloads">Descargas</a> |
-		<a href="http://docs.chaucha.cl/">Documentación</a> |
-		<a href="https://www.facebook.com/proyectochaucha/">Redes sociales</a><br><br>
-		<a href="http://pool.chaucha.cl">Mining Pool</a> |
-		<a href="http://explorer.chaucha.cl">Block Explorer</a>
+					<a class="navbar-item" href="#downloads">
+						Descargas
+					</a>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							Documentación
+						</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="#">
+								White Paper
+							</a>
+							<a class="navbar-item" href="#specs">
+								Especificaciones técnicas
+							</a>
+						</div>
+					</div>
+
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							Extras
+						</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
+							Block Explorer
+							</a>
+							<a class="navbar-item" href="http://pool.chaucha.cl/" target="_blank">
+							Mining Pool
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="navbar-end">
+					<a class="navbar-item" href="https://github.com/proyecto-chaucha/" target="_blank">
+						<span class="icon">
+							<i class="fa fa-lg fa-github-alt"></i>
+						</span>
+					</a>
+					<a class="navbar-item" href="https://facebook.com/proyectochaucha" target="_blank">
+						<span class="icon">
+							<i class="fa fa-lg fa-facebook-official"></i>
+						</span>
+					</a>
+					<a class="navbar-item" href="https://chaucha.slack.com" target="_blank">
+						<span class="icon">
+							<i class="fa fa-slack"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section class="hero is-medium header-image">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<h1 class="title PS2 fucsia is-size-3">Proyecto Chaucha</h1>
+			<h2 id="motto" class="subtitle comfortaa is-size-5">(insertar eslogan aquí)</h2>
+		</div>
 	</div>
-</div>
+</section>
 
-<div id="justified">
-	<h3>¿Qué es el Proyecto Chaucha?</h3>
-	&emsp;&emsp;&emsp;&emsp;El objetivo principal del Proyecto Chaucha es <b>educar</b> a la población Chilena sobre la utilización de criptomonedas, proponiendo un sistema monetario <b>confiable</b>, <b>transparente</b> y <b>descentralizado</b>, junto con la documentación necesaria para comprender de manera simple el funcionamiento de la red y la tecnología utilizada.
-</div>
 
-<div id="data_spec">
-	<h3>Especificaciones técnicas</h3>
-	<li>Cada <b>un minuto</b> se generan Chauchas como <b>recompensa al minar</b> un bloque.</li>
-	<li>Con el <b>primer bloque</b> se generaron <b>50.000 CHA</b> para el financiamiento del proyecto.</li>
-	<li>Desde el <b>bloque #1 al #2833</b> la recompensa fue de <b>10 CHA</b> por bloque.</li>
-	<li>A partir del bloque #2834 <b>hasta el bloque #5000</b> la recompensa es <b>variable</b>.</li>
-	<li>Se recalcula la <b>dificultad</b> de minado de bloques cada <b>30 minutos</b>.</li>
-	<li>El <b>máximo de Chauchas</b> que existirán en la red es de <b>123.456.789 CHA</b>.</li>
-	<li>La Red Chaucha está basada en <a href="https://litecoin.org/" target="_blank">Litecoin</a>.</li>
-</div>
+<section class="section">
+	<div class="container has-text-centered comfortaa">
+		<h1 class="title is-size-3">
+			¿Qué es el Proyecto Chaucha?
+		</h1>
+		<div class="columns">
+			<div class="column is-narrow is-hidden-mobile">
+				<br>
+				<img src="chaucha.png" height="200" width="200">
+			</div>
+			<div class="column has-text-justified is-size-6">
+				<br>
+				<p>
+					Una organización de codigo abierto, enfocada en diseñar e implementar herramientas de software que ayuden a la adopción y educación de las personas hacia la tecnología Blockchain.
+				</p>
+				<br>
+				<p>
+					La finalidad del Proyecto Chaucha es permitir que los nuevos usuarios de criptomonedas puedan aprender sobre el funcionamiento de los sistemas a partir de un ejercicio práctico, utilizando las herramientas y la documentación generada por los miembros la organización.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-<p id="credits">2017 - <a href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">César Vásquez C</a><br>Con apoyo de <a href="https://ninjas.cl/" target="_blank">Camilo Castro</a> e <a href="https://www.indexar.cl/" target="_blank">Indexar</a></p>
-</center>
+<section class="hero is-medium is-light" id="specs">
+	<div class="hero-body">
+		<div class="container comfortaa">
+			<div class="columns">
+				<div class="column is is-narrow">
+					<h1 class="tile is-size-3">
+							Chaucha (CHA)
+					</h1>
+					<h2 class="subtitle is-size-5">
+						La primera criptomoneda Chilena
+					</h2>
+				</div>
+				<div class="column has-text-justified">
+					<p>
+						<strong>Chaucha</strong> fue la primera creacion por parte del Proyecto Chaucha, y fue diseñada para cumplir la función de "ejemplo de criptomoneda" a modo de guiar los futuros desarrollos de la organización.
+					</p>
+					<br>
+					<p>
+						<h1 class="subtitle is-size-4">
+							Especificaciones Tecnicas
+						</h1>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-check-square"></i>
+								Basado en el código fuente de <a href="https://litecoin.org" target="_blank">Litecoin</a> (0.8.7.4)</li>
+							<li><i class="fa-li fa fa-check-square"></i>
+								Creación de 1 bloque por minuto
+							</li>
+							<li><i class="fa-li fa fa-check-square"></i>
+								Recompensa por bloque minado variable <strong><a href="distribucion.png">(Ver Aquí)</a></strong>
+							</li>
+							<li><i class="fa-li fa fa-check-square"></i>
+								Límite máximo de 123.456.789 CHA
+							</li>
+						</ul>
+					</p>						
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<section class="section" id="downloads">
+	<div class="container has-text-centered comfortaa">
+		<h1 class="title is-size-3">
+			Descargas
+		</h1>
+		<p>
+			<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-linux.zip">Linux</a><br>
+			<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-win.zip">Windows</a><br>
+			<a href="https://github.com/proyecto-chaucha/chauchera/releases/download/1.0/chaucha-qt_1.0.0-macos.zip">MacOS (OSX)</a><br>
+			<a href="http://gitlab.com/chaucha/chauchera" target="_blank">Código Fuente</a>
+		</p>
+		<br>
+		<p class="has-text-justified">
+			Si deseas minar Chauchas puedes conectarte a la <a href="http://pool.chaucha.cl/" target="_blank">Mining Pool oficial</a> del proyecto con el programa de minado que soporte tu máquina, asegurandote de que este software oporte el algoritmo de minado scrypt.
+		</p>
+		<br>
+		<ul>
+			<li><strong>URL:</strong> stratum+tcp://pool.chaucha.cl<br></li>
+			<li><strong>Puertos:</strong> 3008 (CPU + GPU) // 3032 (ASIC)</li>
+			<li><strong>Algoritmo:</strong> scrypt</li>
+		</ul>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="content">
+			<nav class="level">
+				<div class="level-left">
+					<div class="level-item">
+						<p class="heading">
+							<strong>Proyecto Chaucha.</strong><br>
+							Fundado por <a href="https://medium.com/@z80">César Vásquez C.</a><br> 
+							en colaboración con <a href="http://www.ninjas.cl">Camilo Castro</a> e
+							<a href="https://www.indexar.cl/">Indexar</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="level-right">
+					<div class="level-item has-text-right">
+						<a href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">
+							<span class="icon">
+								<i class="fa fa-music fa-2x"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./motto.js"></script>
+<script type="text/javascript">
+	(function() {
+	var burger = document.querySelector('.navbar-burger');
+	var menu = document.querySelector('.navbar-menu');
+	burger.addEventListener('click', function() {
+	burger.classList.toggle('is-active');
+	menu.classList.toggle('is-active');
+	});
+	})();
+</script>
 </body>
 </html>
