@@ -16,95 +16,131 @@
 	}
 	.PS2 {
 		font-family: 'Press Start 2P', cursive;
+			color: #F71568;
 		text-shadow: 2px 2px #eeeeee;
 	}
 	.comfortaa {
 		font-family: 'Comfortaa', cursive;
-		text-shadow: 2px 2px #eeeeee;
 	}
 	</style>
 </head>
 <body>
-<nav class="navbar">
-	<div class="container">
-		<div class="navbar-brand">
-			<button class="button navbar-burger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-		</div>
+<section>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-brand">
+				<button class="button navbar-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 
-		<div class="navbar-menu">
-			<div class="navbar-start">
-				<a class="navbar-item" href="http://www.chaucha.cl/">
-					Inicio
-				</a>
-
-				<a class="navbar-item" href="http://www.chaucha.cl/downloads">
-					Descargas
-				</a>
-
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link">
-						Documentación
+			<div class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="http://www.chaucha.cl/">
+						Inicio
 					</a>
-					<div class="navbar-dropdown">
-						<a class="navbar-item" href="/whitepaper">
-							White Paper
+
+					<a class="navbar-item" href="http://www.chaucha.cl/downloads">
+						Descargas
+					</a>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							Documentación
 						</a>
-						<a class="navbar-item" href="/whitepaper">
-							Especificaciones técnicas
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="/whitepaper">
+								White Paper
+							</a>
+							<a class="navbar-item" href="/whitepaper">
+								Especificaciones técnicas
+							</a>
+						</div>
+					</div>
+
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							Extras
 						</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
+							Block Explorer
+							</a>
+							<a class="navbar-item" href="http://pool.chaucha.cl/" target="_blank">
+							Mining Pool
+							</a>
+						</div>
 					</div>
 				</div>
 
 
-				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link">
-						Extras
+				<div class="navbar-end">
+					<a class="navbar-item" href="https://github.com/proyecto-chaucha/" target="_blank">
+						<span class="icon">
+							<i class="fa fa-lg fa-github"></i>
+						</span>
 					</a>
-					<div class="navbar-dropdown">
-						<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
-						Block Explorer
-						</a>
-						<a class="navbar-item" href="http://pool.chaucha.cl/" target="_blank">
-						Mining Pool
-						</a>
-					</div>
+					<a class="navbar-item" href="https://facebook.com/proyectochaucha" target="_blank">
+						<span class="icon">
+							<i class="fa fa-lg fa-facebook"></i>
+						</span>
+					</a>
+					<a class="navbar-item" href="https://chaucha.slack.com" target="_blank">
+						<span class="icon">
+							<i class="fa fa-slack"></i>
+						</span>
+					</a>
 				</div>
 			</div>
-
-
-			<div class="navbar-end">
-				<a class="navbar-item" href="https://github.com/proyecto-chaucha/" target="_blank">
-					<span class="icon">
-						<i class="fa fa-lg fa-github"></i>
-					</span>
-				</a>
-				<a class="navbar-item" href="https://facebook.com/proyectochaucha" target="_blank">
-					<span class="icon">
-						<i class="fa fa-lg fa-facebook"></i>
-					</span>
-				</a>
-				<a class="navbar-item" href="https://chaucha.slack.com" target="_blank">
-					<span class="icon">
-						<i class="fa fa-slack"></i>
-					</span>
-				</a>
-			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
+</section>
 
-<section class="hero is-light is-medium header-image">
+<section class="hero is-medium header-image">
 	<div class="hero-body">
 		<div class="container has-text-centered">
 			<h1 class="title PS2 is-size-1">Proyecto Chaucha</h1>
-			<h2 class="subtitle comfortaa is-size-3">(insertar eslogan aquí)</h2>
+			<h2 id="motto" class="subtitle comfortaa is-size-3">(insertar eslogan aquí)</h2>
 		</div>
 	</div>
 </section>
 
+
+<section class="section">
+	<div class="container has-text-centered comfortaa">
+		<h1 class="title is-size-2">
+			¿Qué es el Proyecto Chaucha?
+		</h1>
+		<div class="columns is-mobile">
+			<div class="column is-narrow">
+				<img src="chaucha.png" height="120" width="120">
+			</div>
+			<div class="column has-text-justified is-size-5">
+				<p>
+				El objetivo principal del Proyecto Chaucha es educar a la población Chilena sobre la utilización de criptomonedas, proponiendo un sistema monetario confiable, transparente y descentralizado, junto con la documentación necesaria para comprender de manera simple el funcionamiento de la red y la tecnología utilizada.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="content">
+			<p>
+				<strong>Proyecto Chaucha.</strong><br>
+				Fundado por <a href="http://jgthms.com">César Vásquez C</a>, 
+				en colaboración con <a href="http://www.ninjas.cl">Camilo Castro</a> e
+				<a href="https://www.indexar.cl/">Indexar</a>.
+			</p>
+		</div>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./motto.js"></script>
 </body>
 </html>
