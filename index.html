@@ -173,6 +173,9 @@
 							<li><i class="fa-li fa fa-check-square fucsia"></i>
 								Límite máximo de 123.456.789 CHA
 							</li>
+							<li><i class="fa-li fa fa-check-square fucsia"></i>
+								Precio actual de <u id="data"></u> BTC
+							</li>
 						</ul>
 					</p>
 				</div>
@@ -265,6 +268,12 @@
 	menu.classList.toggle('is-active');
 	});
 	})();
+
+	$(document).ready(function() {
+		$.get('https://www.southxchange.com/api/price/cha/btc', function(data) {
+		$("#data").text(data['Last'].toFixed(8));
+		});
+	});
 </script>
 </body>
 </html>
