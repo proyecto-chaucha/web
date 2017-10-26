@@ -8,7 +8,8 @@
 	"Por la razón o la chaucha",
 	"Aquí no se cae el sistema",
 	"リサフランク420 / 現代のコンピュー",
-	"Johnny 100 Chauchas"
+	"Johnny 100 Chauchas",
+	"Make Chaucha Great Again"
 	];
 
 	function refresh () {
