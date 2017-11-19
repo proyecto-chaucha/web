@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto Chaucha</title>
+	<link href="./favicon.ico" rel="icon" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+
+	<meta name="description" content="Una criptomoneda bien bonita">
+	<meta name="keywords" content="chaucha, cryptocurrency, chauchera">
+	<meta name="author" content="César Vásquez C.">	
+
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Comfortaa');
+	.bg-pixel {
+	    background-image: url("bg.png");
+	    background-repeat: repeat;
+	    background-attachment: fixed;
+	}
+    .circle {
+        border-radius: 50%;
+    }
+	.fucsia {
+		color: #F71568;
+	}
+	.PS2 {
+		font-family: 'Press Start 2P', cursive;
+		text-shadow: 2px 2px #eeeeee;
+	}
+	.comfortaa {
+		font-family: 'Comfortaa', cursive;
+	}
+	</style>
+</head>
+<body>
+<nav class="navbar">
+	<div class="container">
+		<div class="navbar-brand">
+			<div id="navbar-burger" class="navbar-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="navbar-menu" id="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item" href="/">
+					Inicio
+				</a>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						Chaucha
+					</a>
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="/#downloads">
+							Descargas
+						</a>
+						<a class="navbar-item" href="/#specs">
+							Especificaciones técnicas
+						</a>
+					</div>
+				</div>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						Extras
+					</a>
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="https://bitcointalk.org/index.php?topic=2144238.0" target="_blank">
+						Announcement
+						</a>
+						<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
+						Block Explorer
+						</a>
+						<a class="navbar-item" href="http://pool.chaucha.cl/" target="_blank">
+						Mining Pool
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="navbar-end">
+				<a class="navbar-item" href="https://github.com/proyecto-chaucha/" target="_blank">
+					<span class="icon">
+						<i class="fa fa-lg fa-github-alt"></i>
+					</span>
+				</a>
+				<a class="navbar-item" href="https://facebook.com/proyectochaucha" target="_blank">
+					<span class="icon">
+						<i class="fa fa-lg fa-facebook"></i>
+					</span>
+				</a>
+				<a class="navbar-item" href="https://t.me/chaucha" target="_blank">
+					<span class="icon">
+						<i class="fa fa-lg fa-paper-plane"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<section class="hero bg-pixel">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<img class="circle" src="quirquincho.jpg" width="200" height="200"><br>
+			<h1 class="title PS2 fucsia is-size-4">@QuirquinchoBot</h1>
+			<h2 class="subtitle comfortaa is-size-5">El protector de las Chauchas</h2>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container comfortaa">
+		<div class="columns">
+			<div class="column is-hidden-mobile is-one-quarter">
+				<aside class="menu">
+					<p class="menu-label">
+						Introducción
+					</p>
+					<ul class="menu-list">
+						<li><a href="#quirquincho">Quirquincho</a></li>
+						<li><a href="#devteam">Desarrolladores</a></li>
+					</ul>
+
+					<p class="menu-label">
+						Listado de comandos
+					</p>
+					<ul class="menu-list">
+						<li><a href="#wallet">Online Wallet</a></li>
+						<li><a href="#red">Estado de la Red</a></li>
+						<li><a href="#dice">Juego</a></li>
+						<li><a href="#help">Ayuda</a></li>
+					</ul>
+
+					<p class="menu-label">
+						Links de interes
+					</p>
+					<ul class="menu-list">
+						<li><a href="#source">Código fuente</a></li>
+						<li><a>Telegram</a></li>
+					</ul>
+				</aside>
+			</div>
+			<div class="column is-three-quarters">
+				<h1 id="quirquincho" class="title has-text-centered">¿Qué es Quirquincho?</h1>
+				<p class="has-text-justified is-size-6">
+					Quirquincho es un <a href="https://es.wikipedia.org/wiki/Bot" target="_blank">Bot</a> que permite conectar la Red Chaucha con el <a href="https://t.me/chaucha" target="_blank">grupo de Telegram</a> del Proyecto Chaucha, y fue nombrado en honor al armadillo pelúdo que habita el altiplano de la Cordillera de los Andes.<br><br>
+					Este proyecto nació de manera accidental, en base a una pelea interna entre los desarrolladores del Proyecto Chaucha para decidir la manera correcta de diseñar un Bot para la comunidad.
+				</p>
+				<br><br>
+				<h1 id="devteam" class="title has-text-centered">Desarrolladores</h1>
+
+				<div class="columns is-centered has-text-centered">
+					<div class="column is-narrow">
+						<img class="circle" width="170" src="cesar.jpg"><br>
+						César Vásquez
+					</div>
+					<div class="column is-narrow">
+						<img class="circle" width="170" src="camilo.jpg"><br>
+						Camilo Castro
+					</div>
+				</div>
+				<br><br>
+				<h1 id="objetivos" class="title has-text-centered">Listado de comandos</h1>
+				<p class="has-text-justified is-size-6">
+					La comunicación entre el usuario y Quirquincho se realiza a partir de comandos especificos para cada tarea a desempeñar, y pueden ser ejecutados de manera privada (hablando directamente con @QuirquinchoBot) o pública (dentro del grupo de Proyecto Chaucha).<br><br>
+					Cada comando dentro del sistema tiene asignado una sintaxis de respuesta en formato de texto, que es conformada en base a la información presente en la Red Chaucha.<br><br>
+					A continuación se presenta la lista completa de comandos que interpreta Quirquincho, junto con una pequeña explicación de su funcionamiento, la sintaxis para ejecutar correctamente el comando y un ejemplo simple de pregunta y respuesta.<br><br>
+				</p>
+				<br>
+
+				<h1 id="wallet" class="title is-size-4">Online Wallet</h1>
+				<p class="has-text-justified">
+					<b>/address</b><br>
+					Creación de dirección dentro de la wallet online de Quirquincho, que se genera de manera privada y que solo es posible interactuar con el usuario de Telegram que utilizó el comando.<br><br>
+					Respuesta: {address}
+				</p>
+				<br>
+				<p class="has-text-justified">
+					<b>/balance</b><br>
+					Saldo disponible de Chauchas que pertenece al usuario.<br><br>
+					Respuesta: {balance} CHA
+				</p>
+				<br>
+				<p class="has-text-justified">
+					<b>/send X Y</b><br>
+					Generación de transacción dentro de la Red Chaucha, que envía <b>X</b> Chauchas del saldo disponible del usuario hacia la dirección <b>Y</b>.<br><br>
+					Respuesta: {Transaction ID}
+				</p>
+				<br><br>
+
+				<h1 id="red" class="title is-size-4">Estado de la Red</h1>
+				<p class="has-text-justified">
+					<b>/red</b><br>
+					Información sobre el funcionamiento actual de la Red Chaucha.<br><br>
+					Respuesta: {Height} {Difficulty} {Hashrate} {Time between blocks}
+				</p>
+				<br><br>
+
+				<h1 id="dice" class="title is-size-4">Juego</h1>
+				<p class="has-text-justified">
+					<b>/dice X</b><br>
+					Quirquincho calcula un número N aleatorio entre 0 y 1000.<br><br>
+					Si N > 500 el usuario gana <b>X</b> CHA<br>
+					Si N < 500 el usuario pierde <b>X</b> CHA<br>
+					si N = 500 el usuario gana <b>X*2</b> CHA<br>
+					si N = X no sucede nada<br><br>
+					Respuesta: {N} {Result}
+				</p>
+				<br>
+				<p class="has-text-justified">
+					<b>/info</b><br>
+					Saldo perteneciente a Quirquincho, que es utilizado para pagar el premio del comando anterior.<br><br>
+					Respuesta: {Balance}
+				</p>
+				<br><br>
+
+				<h1 id="help" class="title is-size-4">Ayuda</h1>
+				<p class="has-text-justified">
+					<b>/help</b><br>
+					Pequeño tutorial de utilización de la Wallet Online.<br><br>
+					Respuesta: {Tutorial}
+				</p>
+
+				<br><br>
+				<h1 class="title has-text-centered">Links de interes</h1>
+				<p class="has-text-centered is-size-6">
+					<b id="source">Código fuente</b><br>
+					<a href="https://github.com/proyecto-chaucha/quirquincho" target="_blank">https://github.com/proyecto-chaucha/quirquincho</a><br><br>
+					<b id="telegram">Telegram</b><br>
+					<a href="https://t.me/chaucha" target="_blank">Grupo de Proyecto Chaucha</a><br>
+					<a href="https://telegram.me/quirquinchobot" target="_blank">@QuirquinchoBot</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer bg-pixel">
+	<div class="container">
+		<div class="content">
+			<nav class="level">
+				<div class="level-left">
+					<div class="level-item">
+						<p class="heading">
+							<strong>Proyecto Chaucha.</strong><br>
+							Fundado por <a class="fucsia" href="https://medium.com/@z80">César Vásquez C.</a><br> 
+							en colaboración con <a class="fucsia" href="http://www.ninjas.cl">Camilo Castro</a> e
+							<a class="fucsia" href="https://www.indexar.cl/">Indexar</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="level-right">
+					<div class="level-item has-text-right">
+						<a class="fucsia" href="https://www.youtube.com/watch?v=8yMMHDRBXqQ" target="_blank">
+							<span class="icon">
+								<i class="fa fa-music fa-2x"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	(function() {
+	var burger = document.querySelector('.navbar-burger');
+	var menu = document.querySelector('.navbar-menu');
+	burger.addEventListener('click', function() {
+	burger.classList.toggle('is-active');
+	menu.classList.toggle('is-active');
+	});
+	})();
+</script>
+</body>
+</html>
