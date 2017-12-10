@@ -184,7 +184,7 @@
 								Límite máximo de 123.456.789 CHA
 							</li>
 							<li><i class="fa-li fa fa-check-square fucsia"></i>
-								Precio actual de <u id="data">(cargando...)</u> BTC
+								Precio actual de $<a href="https://orionx.io/exchange/CHACLP" target="_blank" id="data">(cargando...)</a> CLP
 							</li>
 						</ul>
 					</p>
@@ -280,8 +280,8 @@
 	})();
 
 	$(document).ready(function() {
-		$.get('https://www.southxchange.com/api/price/cha/btc', function(data) {
-		$("#data").text(data['Last'].toFixed(8));
+		$.get('http://api.orionx.io/graphql?query={marketOrderBook(marketCode:"CHACLP"){spread,mid}}', function(data) {
+		$("#data").text(data['data']['marketOrderBook']['mid']);
 		});
 	});
 </script>
