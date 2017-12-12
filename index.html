@@ -280,7 +280,7 @@
 	})();
 
 	$(document).ready(function() {
-		$.get('https://api.orionx.io/graphql?query={marketOrderBook(marketCode:"CHACLP"){spread,mid}}', function(data) {
+		$.get('https://api.orionx.io/graphql?query={marketOrderBook(marketCode:"CHACLP"){mid}}', function(data) {
 		$("#data").text(data['data']['marketOrderBook']['mid']);
 		});
 	});
