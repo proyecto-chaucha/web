@@ -183,9 +183,6 @@
 							<li><i class="fa-li fa fa-check-square fucsia"></i>
 								Límite máximo de 123.456.789 CHA
 							</li>
-							<li><i class="fa-li fa fa-check-square fucsia"></i>
-								Precio actual de $<a href="https://orionx.io/exchange/CHACLP" target="_blank" id="data">(cargando...)</a> CLP
-							</li>
 						</ul>
 					</p>
 				</div>
@@ -278,12 +275,6 @@
 	menu.classList.toggle('is-active');
 	});
 	})();
-
-	$(document).ready(function() {
-		$.get('https://api.orionx.io/graphql?query={marketOrderBook(marketCode:"CHACLP"){mid}}', function(data) {
-		$("#data").text(data['data']['marketOrderBook']['mid']);
-		});
-	});
 </script>
 </body>
 </html>
