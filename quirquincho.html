@@ -76,6 +76,9 @@
 						<a class="navbar-item" href="quirquincho.html">
 							Quirquincho
 						</a>
+						<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
+							Chinchilla
+						</a>
 					</div>
 				</div>
 
@@ -87,10 +90,7 @@
 						<a class="navbar-item" href="https://bitcointalk.org/index.php?topic=2144238.0" target="_blank">
 						Announcement
 						</a>
-						<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
-						Block Explorer
-						</a>
-						<a class="navbar-item" href="http://pool.chaucha.cl/" target="_blank">
+						<a class="navbar-item" href="http://artesa.chaucha.cl/" target="_blank">
 						Mining Pool
 						</a>
 					</div>
@@ -131,116 +131,129 @@
 
 <section class="section">
 	<div class="container comfortaa">
-		<div class="columns">
-			<div class="column is-hidden-mobile is-one-quarter">
-				<aside class="menu">
-					<p class="menu-label">
-						Introducción
-					</p>
-					<ul class="menu-list">
-						<li><a href="#quirquincho">Quirquincho</a></li>
-						<li><a href="#devteam">Desarrolladores</a></li>
-					</ul>
+		<div class="content">
+			<h2 id="quirquincho" class="title has-text-centered">Introducción</h2>
+			<p class="has-text-justified">
+				Quirquincho es un <a class="fucsia" href="https://es.wikipedia.org/wiki/Bot" target="_blank">Bot</a> que permite conectar la Red Chaucha con el <a class="fucsia" href="https://t.me/chaucha" target="_blank">grupo de Telegram</a> del Proyecto Chaucha, y fue nombrado en honor al armadillo peludo que habita el altiplano de la Cordillera de los Andes.<br><br>
+				Este proyecto nació de manera accidental, en base a una pelea interna entre los desarrolladores del Proyecto Chaucha para decidir la manera correcta de diseñar un Bot para la comunidad.
+			</p>
 
-					<p class="menu-label">
-						Listado de comandos
-					</p>
-					<ul class="menu-list">
-						<li><a href="#wallet">Online Wallet</a></li>
-						<li><a href="#red">Información</a></li>
-						<li><a href="#help">Ayuda</a></li>
-					</ul>
-
-					<p class="menu-label">
-						Links de interes
-					</p>
-					<ul class="menu-list">
-						<li><a href="#source">Código fuente</a></li>
-						<li><a href="#telegram">Telegram</a></li>
-					</ul>
-				</aside>
-			</div>
-			<div class="column is-three-quarters">
-				<h1 id="quirquincho" class="title has-text-centered">¿Qué es Quirquincho?</h1>
-				<p class="has-text-justified is-size-6">
-					Quirquincho es un <a class="fucsia" href="https://es.wikipedia.org/wiki/Bot" target="_blank">Bot</a> que permite conectar la Red Chaucha con el <a class="fucsia" href="https://t.me/chaucha" target="_blank">grupo de Telegram</a> del Proyecto Chaucha, y fue nombrado en honor al armadillo peludo que habita el altiplano de la Cordillera de los Andes.<br><br>
-					Este proyecto nació de manera accidental, en base a una pelea interna entre los desarrolladores del Proyecto Chaucha para decidir la manera correcta de diseñar un Bot para la comunidad.
-				</p>
-				<br><br>
-				<h1 id="devteam" class="title has-text-centered">Desarrolladores</h1>
-
-				<div class="columns is-centered has-text-centered">
-					<div class="column is-narrow">
-						<img class="circle" width="170" src="cesar.jpg"><br>
-						César Vásquez<br>
-						<i class="heading">Programación</i>
-					</div>
-					<div class="column is-narrow">
-						<img class="circle" width="170" src="camilo.jpg"><br>
-						Camilo Castro<br>
-						<i class="heading">Lógica y "vale otro"</i>
-					</div>
+			<h2 id="devteam" class="title has-text-centered">Desarrolladores</h2>
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-narrow">
+					<img class="circle" width="170" src="cesar.jpg"><br>
+					César Vásquez
 				</div>
-				<br><br>
-				<h1 id="objetivos" class="title has-text-centered">Listado de comandos</h1>
-				<p class="has-text-justified is-size-6">
-					La comunicación entre el usuario y Quirquincho se realiza a partir de comandos específicos para cada tarea a desempeñar, y pueden ser ejecutados de manera privada (hablando directamente con @QuirquinchoBot) o pública (dentro del grupo de Proyecto Chaucha).<br><br>
-					Cada comando dentro del sistema tiene asignado una sintaxis de respuesta en formato de texto, que es conformada en base a la información presente en la Red Chaucha.<br><br>
-					A continuación se presenta la lista completa de comandos que interpreta Quirquincho, junto con una pequeña explicación de su funcionamiento, la sintaxis para ejecutar correctamente el comando y un ejemplo simple de pregunta y respuesta.<br><br>
-				</p>
-				<br>
+				<div class="column is-narrow">
+					<img class="circle" width="170" src="camilo.jpg"><br>
+					Camilo Castro
+				</div>
+			</div>
 
-				<h1 id="wallet" class="title is-size-4">Online Wallet</h1>
-				<p class="has-text-justified">
-					<b>/address</b><br>
-					Creación de dirección dentro de la wallet online de Quirquincho, que se genera de manera privada y que solo es posible interactuar con el usuario de Telegram que utilizó el comando.<br><br>
-					Respuesta: {address}
-				</p>
-				<br>
-				<p class="has-text-justified">
-					<b>/balance</b><br>
-					Saldo disponible de Chauchas que pertenece al usuario.<br><br>
-					Respuesta: {balance} CHA
-				</p>
-				<br>
-				<p class="has-text-justified">
-					<b>/send X Y</b><br>
-					Generación de transacción dentro de la Red Chaucha, que envía <b>X</b> Chauchas del saldo disponible del usuario hacia la dirección <b>Y</b>.<br><br>
-					Respuesta: {Transaction ID}
-				</p>
-				<br><br>
+			<br><br>
+			<h2 id="comandos" class="title has-text-centered">Listado de comandos</h1>
+			<p class="has-text-justified">La comunicación entre el usuario y Quirquincho se realiza a partir de comandos específicos para cada tarea a desempeñar, que pueden ser ejecutados de manera privada, hablando directamente con <a class="fucsia" href="https://t.me/quirquinchobot" target="_blank">@QuirquinchoBot</a>, o de manera pública dentro del grupo de <a class="fucsia" href="https://t.me/chaucha" target="_blank">Proyecto Chaucha</a>.</p>
+			<p class="has-text-justified">Cada comando ejecuta una tarea especifica dentro de la Red Chaucha y entrega un mensaje de respuesta en formato de texto.</p>
+			<p class="has-text-justified">A continuación se presenta la lista completa de comandos que interpreta Quirquincho, junto con una pequeña explicación de su funcionamiento, la sintaxis para ejecutar correctamente el comando y un ejemplo simple de pregunta y respuesta.</p>
+			<br>
 
-				<h1 id="red" class="title is-size-4">Información</h1>
-				<p class="has-text-justified">
-					<b>/red</b><br>
-					Funcionamiento actual de la Red Chaucha.<br><br>
-					Respuesta: {Height} {Difficulty} {Hashrate} {Time between blocks}
-				</p>
-				<br>
-				<p class="has-text-justified">
-					<b>/precio</b><br>
-					Variación del precio de la Chaucha en <a href="https://www.southxchange.com/Market/Book/cha/BTC" target="_blank" class="fucsia">SouthXchange</a>.<br><br>
-					Respuesta: {Ask} {Bid} {Variation24Hr}
-				</p>
-				<br><br>
+			<div class="has-text-centered">
+				<h3 class="title">Online Wallet</h3>
 
-				<h1 id="help" class="title is-size-4">Ayuda</h1>
-				<p class="has-text-justified">
-					<b>/help</b><br>
-					Pequeño tutorial de utilización de la Wallet Online.<br><br>
-					Respuesta: {Tutorial}
+				<p><b>/balance</b><br>
+				Saldo disponible de Chauchas y address que pertenece al usuario que ejecutó el comando.</p>
+
+				<p>Modo de uso:<br>
+				<code>/balance</code></p>
+				<p>Respuesta:<br>
+				<code>
+					 Tienes {TOTAL} CHA en tu dirección<br>
+					{CONFIRMADO} CHA para utilizar y {PROCESANDO} CHA sin confirmar.<br><br>
+					Tu address es {ADDRESS}
+				</code>
 				</p>
 
-				<br><br>
-				<h1 class="title has-text-centered">Links de interés</h1>
-				<p class="has-text-centered is-size-6">
-					<b id="source">Código fuente</b><br>
-					<a class="fucsia" href="https://github.com/proyecto-chaucha/quirquincho" target="_blank">Repositorio en GitHub</a><br><br>
-					<b id="telegram">Telegram</b><br>
-					<a class="fucsia" href="https://t.me/chaucha" target="_blank">Grupo de Proyecto Chaucha</a><br>
-					<a class="fucsia" href="https://telegram.me/quirquinchobot" target="_blank">@QuirquinchoBot</a>
+				<br>
+
+				<p><b>/send</b><br>
+				Enviar Chauchas especificando el monto a transferir y la dirección de destino.</p>
+
+				<p>Modo de uso:<br>
+				<code>/send {cantidad} {address}</code></p>
+				<p>Respuesta:<br>
+				<code>
+					insight.chaucha.cl/tx/{TXID}
+				</code>
+				</p>
+
+				<br>
+
+				<p><b>/sendall</b><br>
+				Enviar todas las Chauchas que mantiene la dirección del usuario hacia una dirección de destino.</p>
+
+				<p>Modo de uso:<br>
+				<code>/sendall {address}</code></p>
+				<p>Respuesta:<br>
+				<code>
+					insight.chaucha.cl/tx/{TXID}
+				</code>
+				</p>
+
+				<br>
+
+				<p><b>/qr</b><br>
+				Creación de código QR con la dirección asignada al usuario.</p>
+
+				<p>Modo de uso:<br>
+				<code>/qr</code></p>
+				<p>Respuesta:<br>
+				<code>
+					{IMAGEN QRCODE}
+				</code>
+				</p>
+
+				<br>
+
+				<h3 class="title">Información</h3>
+
+				<p><b>/op_return</b><br>
+				Almacenar un mensaje en el blockchain de Chaucha.</p>
+
+				<p>Modo de uso:<br>
+				<code>/op_return {mensaje}</code></p>
+				<p>Respuesta:<br>
+				<code>
+					insight.chaucha.cl/tx/{TXID}
+				</code>
+				</p>
+
+				<br>
+
+				<p><b>/mensajes</b><br>
+				Rescatar mensajes almacenados con la utilización del comando /op_return</p>
+
+				<p>Modo de uso:<br>
+				<code>/mensajes</code></p>
+				<p>Respuesta:<br>
+				<code>
+					{FECHA 1}: {MENSAJE 1}<br>
+					{FECHA 2}: {MENSAJE 2}<br>
+					...<br>
+					{FECHA N}: {MENSAJE N}<br>
+				</code>
 				</p>
 			</div>
+
+			<br><br>
+			<h2 class="title has-text-centered">Links de interés</h2>
+			<p class="has-text-centered is-size-6">
+				<b id="source">Código fuente</b><br>
+				<a class="fucsia" href="https://github.com/proyecto-chaucha/quirquincho" target="_blank">Repositorio en GitHub</a><br><br>
+				<b id="telegram">Telegram</b><br>
+				<a class="fucsia" href="https://t.me/chaucha" target="_blank">Grupo de Proyecto Chaucha</a><br>
+				<a class="fucsia" href="https://telegram.me/quirquinchobot" target="_blank">@QuirquinchoBot</a>
+			</p>
+
 		</div>
 	</div>
 </section>
