@@ -1,0 +1,27 @@
+/**
+Chaucha Styles
+*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Comfortaa');
+
+.bg-pixel {
+    background-image: url("../img/bg.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.fucsia {
+    color: #F71568;
+}
+
+.PS2 {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px #eeeeee;
+}
+
+.comfortaa {
+    font-family: 'Comfortaa', cursive;
+}
