@@ -1,7 +1,4 @@
-
-	var timer = setInterval(refresh, 5000);
-
-	var motto = [
+let motto = [
 	"Una criptomoneda bien bonita", 
 	"Le chauché proyecté",
 	"dejale caer to' el peso",
@@ -10,15 +7,19 @@
 	"リサフランク420 / 現代のコンピュー",
 	"Johnny 100 Chauchas",
 	"Make Chaucha Great Again"
-	];
+]
 
-	function refresh () {
-		var rnd = Math.floor(Math.random()*motto.length);
-		var rnd_past = -1;
+function refresh () 
+{
+	let position = Math.floor(Math.random() * motto.length)
+	let last_used = -1
 
-		if(rnd != rnd_past) {
-			$("#motto").html(motto[rnd]);
-			rnd_past = rnd;
-		}
-		
+	if(position != last_used) 
+	{
+		$("#motto").html(motto[position])
+		last_used = position
 	}
+	
+}
+
+let timer = setInterval(refresh, 5000)
