@@ -2,7 +2,7 @@ title: Quirquincho
 ---
 subtitle: El protector de las chauchas
 ---
-image : ./quirquincho.jpg
+image : https://user-images.githubusercontent.com/292738/40010922-38e7b27c-5774-11e8-970f-0cefb35867b7.jpg
 ---
 body :
 
@@ -15,11 +15,11 @@ body :
 <h2 id="devteam" class="title has-text-centered">Desarrolladores</h2>
 <div class="columns is-centered has-text-centered">
     <div class="column is-narrow">
-        <img class="circle" width="170" src="./cesar.jpg"><br>
+        <img class="circle" width="170" title="césar" src="https://user-images.githubusercontent.com/292738/40010921-38c0c68a-5774-11e8-9eec-5c3a68ac8ae5.jpg"><br>
         César Vásquez
     </div>
     <div class="column is-narrow">
-        <img class="circle" width="170" src="./camilo.jpg"><br>
+        <img class="circle" width="170" title="camilo" src="https://user-images.githubusercontent.com/292738/40010920-38a04720-5774-11e8-86a2-12f53a15f9e6.jpg"><br>
         Camilo Castro
     </div>
 </div>
