@@ -17,11 +17,11 @@ body :
 <h2 id="devteam" class="title has-text-centered">Desarrolladores</h2>
 <div class="columns is-centered has-text-centered">
     <div class="column is-narrow">
-        <img class="circle" width="170" src="cesar.jpg"><br>
+        <img class="circle" width="170" src="./cesar.jpg"><br>
         César Vásquez
     </div>
     <div class="column is-narrow">
-        <img class="circle" width="170" src="camilo.jpg"><br>
+        <img class="circle" width="170" src="./camilo.jpg"><br>
         Camilo Castro
     </div>
 </div>
