@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-lektor build --output-path ../gh-pages
+lektor build --output-path ../../gh-pages
