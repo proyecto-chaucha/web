@@ -1,5 +1,7 @@
 # lektor-jinja-content
 
+[https://github.com/terminal-labs/lektor-jinja-content](https://github.com/terminal-labs/lektor-jinja-content)
+
 This is a Lektor plugin that allows you to render Jinja2 inside your content fields that are string-like. For example, this means that inside your content fields that are of type string or Markdown, you can write Jinja logic, and access Lektor's [Template Context](https://www.getlektor.com/docs/templates/#template-context), and has access to all normal Jinja filters, including those provided by [other plugins](https://github.com/terminal-labs/lektor-slugify). In a Markdown field (or other field that is rendered - like [rst](https://github.com/fschulze/lektor-rst)), the **Jinja is processed first**, then the formatting processor.
 
 With this plugin, you'll have to make sure the content that is rendered **is valid Jinja**. Jinja syntax erros will throw an exception. Don't forget about the handy `{% raw %} {% endraw %}` tags if you want content that is not valid Jinja.
