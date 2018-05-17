@@ -1,0 +1,129 @@
+title: Quirquincho
+---
+subtitle: El protector de las chauchas
+---
+image : https://user-images.githubusercontent.com/292738/40010922-38e7b27c-5774-11e8-970f-0cefb35867b7.jpg
+---
+body :
+
+<h2 id="quirquincho" class="title has-text-centered">Introducción</h2>
+<p class="has-text-justified">
+    Quirquincho es un <a class="fucsia" href="https://es.wikipedia.org/wiki/Bot" target="_blank">Bot</a> que permite conectar la Red Chaucha con el <a class="fucsia" href="https://t.me/chaucha" target="_blank">grupo de Telegram</a> del Proyecto Chaucha, y fue nombrado en honor al armadillo peludo que habita el altiplano de la Cordillera de los Andes.<br><br>
+    Este proyecto nació de manera accidental, en base a una pelea interna entre los desarrolladores del Proyecto Chaucha para decidir la manera correcta de diseñar un Bot para la comunidad.
+</p>
+
+<h2 id="devteam" class="title has-text-centered">Desarrolladores</h2>
+<div class="columns is-centered has-text-centered">
+    <div class="column is-narrow">
+        <img class="circle" width="170" title="césar" src="https://user-images.githubusercontent.com/292738/40010921-38c0c68a-5774-11e8-9eec-5c3a68ac8ae5.jpg"><br>
+        César Vásquez
+    </div>
+    <div class="column is-narrow">
+        <img class="circle" width="170" title="camilo" src="https://user-images.githubusercontent.com/292738/40010920-38a04720-5774-11e8-86a2-12f53a15f9e6.jpg"><br>
+        Camilo Castro
+    </div>
+</div>
+
+<br><br>
+<h1 id="comandos" class="title has-text-centered is-2">Listado de comandos</h1>
+<p class="has-text-justified">La comunicación entre el usuario y Quirquincho se realiza a partir de comandos específicos para cada tarea a desempeñar, que pueden ser ejecutados de manera privada, hablando directamente con <a class="fucsia" href="https://t.me/quirquinchobot" target="_blank">@QuirquinchoBot</a>, o de manera pública dentro del grupo de <a class="fucsia" href="https://t.me/chaucha" target="_blank">Proyecto Chaucha</a>.</p>
+<p class="has-text-justified">Cada comando ejecuta una tarea especifica dentro de la Red Chaucha y entrega un mensaje de respuesta en formato de texto.</p>
+<p class="has-text-justified">A continuación se presenta la lista completa de comandos que interpreta Quirquincho, junto con una pequeña explicación de su funcionamiento, la sintaxis para ejecutar correctamente el comando y un ejemplo simple de pregunta y respuesta.</p>
+<br>
+
+<div class="has-text-centered">
+<h3 class="title">Online Wallet</h3>
+
+<p><b>/balance</b><br>
+Saldo disponible de Chauchas y address que pertenece al usuario que ejecutó el comando.</p>
+
+<p>Modo de uso:<br>
+<code>/balance</code></p>
+<p>Respuesta:<br>
+<code>
+        Tienes {TOTAL} CHA en tu dirección<br>
+    {CONFIRMADO} CHA para utilizar y {PROCESANDO} CHA sin confirmar.<br><br>
+    Tu address es {ADDRESS}
+</code>
+</p>
+
+<br>
+
+<p><b>/send</b><br>
+Enviar Chauchas especificando el monto a transferir y la dirección de destino.</p>
+
+<p>Modo de uso:<br>
+<code>/send {cantidad} {address}</code></p>
+<p>Respuesta:<br>
+<code>
+    insight.chaucha.cl/tx/{TXID}
+</code>
+</p>
+
+<br>
+
+<p><b>/sendall</b><br>
+Enviar todas las Chauchas que mantiene la dirección del usuario hacia una dirección de destino.</p>
+
+<p>Modo de uso:<br>
+<code>/sendall {address}</code></p>
+<p>Respuesta:<br>
+<code>
+    insight.chaucha.cl/tx/{TXID}
+</code>
+</p>
+
+<br>
+
+<p><b>/qr</b><br>
+Creación de código QR con la dirección asignada al usuario.</p>
+
+<p>Modo de uso:<br>
+<code>/qr</code></p>
+<p>Respuesta:<br>
+<code>
+    {IMAGEN QRCODE}
+</code>
+</p>
+
+<br>
+
+<h3 class="title">Información</h3>
+
+<p><b>/op_return</b><br>
+Almacenar un mensaje en el blockchain de Chaucha.</p>
+
+<p>Modo de uso:<br>
+<code>/op_return {mensaje}</code></p>
+<p>Respuesta:<br>
+<code>
+    insight.chaucha.cl/tx/{TXID}
+</code>
+</p>
+
+<br>
+
+<p><b>/mensajes</b><br>
+Rescatar mensajes almacenados con la utilización del comando /op_return</p>
+
+<p>Modo de uso:<br>
+<code>/mensajes</code></p>
+<p>Respuesta:<br>
+<code>
+    {FECHA 1}: {MENSAJE 1}<br>
+    {FECHA 2}: {MENSAJE 2}<br>
+    ...<br>
+    {FECHA N}: {MENSAJE N}<br>
+</code>
+</p>
+</div>
+
+<br><br>
+<h2 class="title has-text-centered">Links de interés</h2>
+<p class="has-text-centered is-size-6">
+    <b id="source">Código fuente</b><br>
+    <a class="fucsia" href="https://github.com/proyecto-chaucha/quirquincho" target="_blank">Repositorio en GitHub</a><br><br>
+    <b id="telegram">Telegram</b><br>
+    <a class="fucsia" href="https://t.me/chaucha" target="_blank">Grupo de Proyecto Chaucha</a><br>
+    <a class="fucsia" href="https://telegram.me/quirquinchobot" target="_blank">@QuirquinchoBot</a>
+</p>

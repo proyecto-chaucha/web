@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ bag('project', this.alt, 'name') }}{% block title %} · {{ this.title }}{% endblock %}</title>
+  
+  <link href="{{'favicon.ico' | url}}" rel="icon" type="image/x-icon">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% block description %}Una criptomoneda bien bonita{% endblock %}">
+	<meta name="keywords" content="{% block keywords %}chaucha, cryptocurrency, chauchera, chile, criptomoneda{% endblock %}">
+  <meta name="author" content="César Vásquez C.">	
+  <link rel="canonical" href="{{ bag('social', 'website') + this.path }}">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+
+  <link rel="stylesheet" href="{{'/css/style.css' | url}}">
+  {% block styles %}{% endblock %}
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar">
+	<div class="container">
+		<div class="navbar-brand">
+			<div id="navbar-burger" class="navbar-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="navbar-menu" id="navbar-menu">
+			<div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="{{url}}">
+                  {{ bag('menu', this.alt, 'home') }}
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/">
+                  {{ bag('menu', this.alt, 'spanish') }}
+                </a>
+                <a class="navbar-item" href="/en">
+                  {{ bag('menu', this.alt, 'english') }}
+                </a>
+              </div>
+            </div>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						Chaucha
+					</a>
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="{{ url }}#downloads">
+                {{ bag('menu', this.alt, 'downloads') }}
+						</a>
+						<a class="navbar-item" href="{{ url }}#specs">
+							  {{ bag('menu', this.alt, 'specs') }}
+						</a>
+					</div>
+				</div>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+              {{ bag('menu', this.alt, 'projects') }}
+					</a>
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="https://docs.chaucha.cl" target="_blank">
+							Chaucha Docs
+						</a>
+						<a class="navbar-item" href="{{ '/quirquincho' | url }}">
+							Quirquincho
+						</a>
+						<a class="navbar-item" href="http://explorer.chaucha.cl" target="_blank">
+							Chinchilla
+						</a>
+						<a class="navbar-item" href="http://iot.chaucha.cl" target="_blank">
+							Chaucha IOT
+						</a>
+					</div>
+				</div>
+
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link">
+						Extras
+					</a>
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="{{ bag('chaucha', 'bitcointalk')}}" target="_blank">
+						Bitcoin Talk
+						</a>
+						<a class="navbar-item" href="{{ bag('chaucha', 'pool') }}" target="_blank">
+						Mining Pool
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="navbar-end">
+				<a class="navbar-item" href="{{ bag('social', 'github') }}" target="_blank">
+					<span class="icon">
+						<i class="fa fa-lg fa-github-alt"></i>
+					</span>
+				</a>
+				<a class="navbar-item" href="{{ bag('social', 'facebook') }}" target="_blank">
+					<span class="icon">
+						<i class="fa fa-lg fa-facebook"></i>
+					</span>
+				</a>
+				<a class="navbar-item" href="{{ bag('social', 'telegram') }}" target="_blank">
+					<span class="icon">
+						<i class="fa fa-lg fa-paper-plane"></i>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- Content  -->
+{% block content %}{% endblock %}
+
+<!-- Footer -->
+<footer class="footer bg-pixel">
+	<div class="container">
+		<div class="content">
+			<nav class="level">
+				<div class="level-left">
+					<div class="level-item">
+						<p class="heading">
+							2017 - <span id="currentYear"></span> <strong>{{ bag('project', this.alt, 'name') }}</strong><br>
+							{{ bag('project', this.alt, 'foundedBy') }} <a class="fucsia" href="https://medium.com/@z80">César Vásquez C.</a><br> 
+							{{ bag('project', this.alt, 'inColaborationWith') }} <a class="fucsia" href="http://www.ninjas.cl">Camilo Castro</a> {{ bag('project', this.alt, 'and') }} 
+							<a class="fucsia" href="https://www.indexar.cl/">Roberto Zamorano</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="level-right">
+					<div class="level-item has-text-right">
+					<a href="https://www.cryptaldash.com/new-coin-listing?utm_source=partner&utm_medium=referral-widget&utm_campaign=newcoinlistingcomp" target="_blank" title="CryptalDash Coin Listing Competition"><img src="https://www.cryptaldash.com/assets/images/coin-listing-share.jpg" border="0" width="176px" alt="CryptalDash Coin Listing Competition"></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</footer>
+
+<!-- Javascripts -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="{{'/js/motto.js'  | url }}"></script>
+<script type="text/javascript" src="{{'/js/burger.js' | url }}"></script>
+<script type="text/javascript">
+  $(document).ready(() => {
+    let year = $('#currentYear')
+    year.text(new Date().getFullYear())
+  })
+</script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

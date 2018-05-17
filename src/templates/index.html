@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+<section class="hero is-medium bg-pixel">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title PS2 fucsia is-size-3">{{ bag('project', this.alt, 'name') }}</h1>
+				<h2 id="motto" class="subtitle comfortaa is-size-5">{{ bag('project', this.alt, 'subtitle') }}</h2>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section class="section">
+		<div class="container has-text-centered comfortaa">
+			<h1 class="title is-size-3">
+				{{ bag('index', this.alt, 'whatIs') }}
+			</h1>
+			<br>
+			<div class="columns">
+				<div class="column is-one-third is-hidden-mobile">
+					<img alt="Chaucha" src="{{ '/img/chaucha.png' | url }}" height="240" width="240">
+				</div>
+				<div class="column has-text-justified is-size-6">
+					{{ this.about }}
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="hero is-medium is-light" id="specs">
+		<div class="hero-body">
+			<div class="container comfortaa">
+				<div class="columns">
+					<div class="column is-one-third">
+						<h1 class="tile is-size-3">
+								Chaucha (CHA)
+						</h1>
+						<h2 class="subtitle is-size-6">
+							{{ bag('project', this.alt, 'subtitle') }}<br><br>
+						</h2>
+	
+					</div>
+					<div class="column has-text-justified">
+						{{ this.aboutChaucha }}
+						<br>
+						<p>
+							<h1 class="subtitle is-size-4">
+									{{ bag('menu', this.alt, 'specs') }}
+							</h1>
+							<ul class="fa-ul">
+									<li><i class="fa-li fa fa-check-square fucsia"></i>
+										{{ bag('index', this.alt, 'basedOn') }} <a href="https://litecoin.org" target="_blank"><u>Litecoin 0.13</u></a></li>
+									<li><i class="fa-li fa fa-check-square fucsia"></i>
+										{{ bag('index', this.alt, 'blockCreation') % bag('chaucha', 'blocksPerMinute') }}
+									</li>
+									<li><i class="fa-li fa fa-check-square fucsia"></i>
+										{{ bag('index', this.alt, 'reward') % bag('chaucha', 'reward') }}
+									</li>
+									<li><i class="fa-li fa fa-check-square fucsia"></i>
+										{{ bag('index', this.alt, 'max') % bag('chaucha', 'max') }}
+									</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section class="section" id="downloads">
+		<div class="container has-text-centered comfortaa">
+			<h1 class="title is-size-3">
+				{{ bag('menu', this.alt, 'downloads') }} v{{ bag('chaucha', 'version') }}
+			</h1>
+			<br>
+			<p>
+				<a class="has-text-black-ter" href="{{ bag('chaucha', 'linux') }}">
+					<i class="fa fa-linux fa-5x" aria-hidden="true"></i>
+				</a>
+				&nbsp;&nbsp;
+				<a class="has-text-black-ter" href="{{ bag('chaucha', 'windows') }}">
+					<i class="fa fa-windows fa-5x" aria-hidden="true"></i>
+				</a>
+				&nbsp;&nbsp;
+				<a class="has-text-black-ter" href="{{ bag('chaucha', 'mac') }}">
+					<i class="fa fa-apple fa-5x" aria-hidden="true"></i>
+				</a>
+			</p>
+			<br>
+			<p>
+				<a class="has-text-black-ter" href="{{ bag('chaucha', 'source') }}" target="_blank">
+					<i class="fa fa-lg fa-code" aria-hidden="true"></i> <u>{{ bag('index', this.alt, 'sourceCode') }}</u>
+				</a>
+			</p>
+			<br>
+	
+			<div class="columns">
+				<div class="column is-one-third has-text-justified">
+					<ul class="fa-ul">
+						<li><i class="fa-li fa fa-check-square fucsia"></i> <strong>{{ bag('index', this.alt, 'url') }}:</strong> {{ bag('pool', 'url') }}<br></li>
+						<li><i class="fa-li fa fa-check-square fucsia"></i><strong>{{ bag('index', this.alt, 'portCPU') }}:</strong> {{ bag('pool', 'cpu') }}</li>
+						<li><i class="fa-li fa fa-check-square fucsia"></i><strong>{{ bag('index', this.alt, 'portASIC') }}:</strong> {{ bag('pool', 'asic') }}/{{ bag('pool', 'cloud') }}</li>
+						<li><i class="fa-li fa fa-check-square fucsia"></i><strong>{{ bag('index', this.alt, 'algo') }}:</strong> {{ bag('pool', 'algo') }}</li>
+					</ul>
+				</div>
+				<div class="column has-text-justified">
+					{{ this.miningPool }}
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
