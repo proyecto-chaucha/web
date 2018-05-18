@@ -1,5 +1,7 @@
 # Website del [Proyecto Chaucha](https://www.chaucha.cl/)
 
+![Travis](https://api.travis-ci.org/proyecto-chaucha/web.svg?branch=master)
+
 El sitio web consta de dos ramas. La primera `master` contiene
 el código fuente, mientras que la rama `gh-pages` contiene
 el compilado accesible desde la web.
