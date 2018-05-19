@@ -4,22 +4,16 @@ title: Home
 ---
 about:
 
-Is an organization focused on creating tools and documentation
-that helps spreading knowledge about criptocurrencies and blockchain technology.
+An organization whose focuses on design, build and maintaince of software tools, tools wich will eventually help people to achieve their goals with the blockchain technology, from an educational point of view.
 <br>					
-The goal of the *Chaucha Project* is enabling new cryptocurrency users learn about how cryptocurrencies work
-by a practical example, creating tools and documentation by the community and members of the organization.
+The Chaucha Project has two principal goals, the first, is to support the new users of cryptocurrencies with differents kind of tools to play with and learn about them in the process, and the second, to join people with different profiles willing to discuss about technology, innovations and solutions for the community. Also, we focuses on have everything well documented and keep all the code generated available for everyone who wants to join into chaucha enviroment as developer or just for learning purposes.
 
 ---
 aboutChaucha:
 
-**Chaucha** was the first creation of *Chaucha Project*. Was designed as an "example crypto currency" and
-is being used to support all current and future iniciatives of the organization.
+**Chaucha** was the first creation from the Project Chaucha itself, and was designed to satisfy the function of "example of cryptocurrency", and to become the core for the developments to come and also to be the principal source of knowledge where the community learns from.
 
 ---
 miningPool:
 
-If you wish to mine *Chaucha* you can use the official 
-<a class="fucsia" href="http://pool.chaucha.cl/" target="_blank">Mining Pool</a>.
-Ensure to uses the proper mining software that meets your machine specs and that
-the software use *scrypt*.
+If you want to mine Chauchas, you can connect to the <a class="fucsia" href="http://pool.chaucha.cl/" target="_blank">Official Mining Pool</a> of the project with the mining program corresponding to the requirements from your machine. Please make sure about the software you would run be compatible with the scrypt algorithm.
