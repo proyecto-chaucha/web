@@ -1,9 +1,0 @@
-dist
-build
-flymd*
-*.pyc
-*.pyo
-*.egg-info
-*~
-*#
-.#*
