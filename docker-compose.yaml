@@ -1,9 +1,0 @@
-version: '2'
-services:
-  lektor:
-    build: . 
-    container_name: lektor
-    ports:
-      - '5000:5000'
-    volumes:
-      - ./src:/usr/src
