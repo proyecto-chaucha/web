@@ -3,13 +3,17 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 425.2 425.2" style="enable-background:new 0 0 425.2 425.2;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#00BCD1;}
-	.st1{fill:#00BCD1;}
+	.st0{fill:url(#XMLID_7_);}
+	.st1{fill:url(#XMLID_8_);}
 	.st2{fill:#FFFFFF;}
 </style>
 <g id="XMLID_4_">
 	<g id="XMLID_419_">
 		<g id="XMLID_423_">
+			<linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="28.0235" y1="212.6" x2="397.1765" y2="212.6">
+				<stop  offset="0.1701" style="stop-color:#35A4DD"/>
+				<stop  offset="0.8145" style="stop-color:#33B4A5"/>
+			</linearGradient>
 			<path id="XMLID_424_" class="st0" d="M212.6,397.2c-7.3,0-14.6-1.4-21.5-4.3l-90.8-37.6c-13.8-5.7-24.6-16.5-30.4-30.4L32.3,234
 				c-5.7-13.8-5.7-29.1,0-42.9L70,100.3c5.7-13.8,16.5-24.6,30.4-30.4l90.8-37.6c13.8-5.7,29.1-5.7,42.9,0L324.9,70
 				c13.8,5.7,24.6,16.5,30.4,30.4l37.6,90.8c5.7,13.8,5.7,29.1,0,42.9l-37.6,90.8c-5.7,13.8-16.5,24.6-30.4,30.4L234,392.9
@@ -18,6 +22,10 @@
 				c11.4-4.7,20.3-13.6,25.1-25.1l37.6-90.8c4.7-11.4,4.7-24,0-35.4l-37.6-90.8c-4.7-11.4-13.6-20.3-25.1-25.1l-90.8-37.6
 				C224.6,39,218.6,37.8,212.6,37.8z"/>
 		</g>
+		<linearGradient id="XMLID_8_" gradientUnits="userSpaceOnUse" x1="58.1756" y1="212.599" x2="367.0246" y2="212.599">
+			<stop  offset="0.1701" style="stop-color:#35A4DD"/>
+			<stop  offset="0.8145" style="stop-color:#33B4A5"/>
+		</linearGradient>
 		<path id="XMLID_420_" class="st1" d="M363.7,195.8l-32.3-78.1c-4.5-10.8-13-19.4-23.8-23.8l-78.1-32.4c-10.8-4.5-22.9-4.5-33.7,0
 			l-78.1,32.3c-10.8,4.5-19.4,13-23.8,23.8l-32.4,78.1c-4.5,10.8-4.5,22.9,0,33.7l32.3,78.1c4.5,10.8,13,19.4,23.8,23.8l78.1,32.4
 			c10.8,4.5,22.9,4.5,33.7,0l78.1-32.3c10.8-4.5,19.4-13,23.8-23.8l32.4-78.1C368.1,218.7,368.1,206.6,363.7,195.8z M306,248.4
