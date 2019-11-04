@@ -5,11 +5,52 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
+#dots{
+	text-decoration: none;
 
+}
 .border{
-	border-radius: 50%;
+	border: 60px;
+	border-radius: 60%;
+	  margin: 0 auto;
+	  padding: 2px;
+	  background-color: #eaab00;
+	  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
+	url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
+	  background-repeat: no-repeat;
+	  background-size: 0 2px, 0 100%, 0% 2px;
+	  background-position: top center, top center, bottom center;
+	  -webkit-animation: drawBorderFromCenter 4s;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes drawBorderFromCenter {
+	    0% {
+	      background-size: 0 2px, 0 0, 100% 100%;
+	    }
+	    20% {
+	      background-size: 100% 2px, 100% 0, 100% 100%;
+	    }
+	    66%
+	    {
+	      background-size: 100% 2px, 100% 98%, 100% 100%;
+	    }
+	    99%
+	    {
+	      background-size: 100% 2px, 100% 98%, 0 2px;
+	}
+
+
+
+	.content
+	{
+	  background: white;
+	  padding: 2em;
+	  text-align: center;
+	  text-transform: uppercase;
+	}
 }
 
 h1,
@@ -21,7 +62,7 @@ h6 {
 	color: #222121;
 	margin: 0;
 	font-weight: 600;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Prompt', sans-serif;
 }
 
 h1 {
@@ -66,7 +107,7 @@ a:focus {
 	text-decoration: underline;
 	color: #111;
 	outline: none;
-	
+
 }
 
 ul,
@@ -147,15 +188,17 @@ ol {
 }
 
 /* Preloder */
-
 #preloder {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 999999;
-	background-color: #ffffff;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('../img/chaucha_logo.gif');
+   background-repeat: no-repeat;
+   background-color: #FFF;
+   background-position: center;
 }
 
 .loader {
@@ -169,45 +212,6 @@ ol {
 	border-radius: 60px;
 	animation: loader 0.8s linear infinite;
 	-webkit-animation: loader 0.8s linear infinite;
-}
-
-@keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		        transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-}
-
-@-webkit-keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
 }
 
 /* Site Buttons */
@@ -1354,7 +1358,7 @@ ol {
 
 
 /*---------------------
-	Responsive 
+	Responsive
 -----------------------*/
 @media only screen and (max-width: 1650px) {
 	.sp-pad {
