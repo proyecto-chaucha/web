@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-/* Template default CSS
+/* Chaucha main CSS Style
 /*----------------------------------------*/
 
 html,
@@ -27,19 +27,18 @@ body {
 
 	/* Chrome, Safari, Opera */
 	@-webkit-keyframes drawBorderFromCenter {
-	    0% {
-	      background-size: 0 2px, 0 0, 100% 100%;
-	    }
-	    20% {
-	      background-size: 100% 2px, 100% 0, 100% 100%;
-	    }
-	    66%
-	    {
-	      background-size: 100% 2px, 100% 98%, 100% 100%;
-	    }
-	    99%
-	    {
-	      background-size: 100% 2px, 100% 98%, 0 2px;
+		0% {
+			background-size: 0 2px, 0 0, 100% 100%;
+		}
+		20% {
+			background-size: 100% 2px, 100% 0, 100% 100%;
+		}
+		66% {
+			background-size: 100% 2px, 100% 98%, 100% 100%;
+		}
+		99% {
+			background-size: 100% 2px, 100% 98%, 0 2px;
+		}
 	}
 
 
@@ -51,7 +50,6 @@ body {
 	  text-align: center;
 	  text-transform: uppercase;
 	}
-}
 
 h1,
 h2,
@@ -847,7 +845,7 @@ ol {
 	Milestones section
 -----------------------*/
 .milestones-section {
-	background: #0d0d0d;
+	background: #6AC6EE;
 }
 
 .milestones-section .fact-box .fact-content {
