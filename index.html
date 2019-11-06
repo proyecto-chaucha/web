@@ -231,10 +231,27 @@
 
 
 	<!--====== Javascripts & Jquery ======-->
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/button.js">
 
-	</script>
+	<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDP-ZVePTr0Ev8DLSSKRZiiegzqA7rLcUA",
+    authDomain: "chaucha-6c85a.firebaseapp.com",
+    databaseURL: "https://chaucha-6c85a.firebaseio.com",
+    projectId: "chaucha-6c85a",
+    storageBucket: "chaucha-6c85a.appspot.com",
+    messagingSenderId: "768621504681",
+    appId: "1:768621504681:web:296830404cd85c55c3a1b8",
+    measurementId: "G-LBFEEFT3E6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
