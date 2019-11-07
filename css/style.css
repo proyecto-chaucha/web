@@ -12,6 +12,7 @@ body {
 
 }
 .border{
+	height: 500%;
 	border: 60px;
 	border-radius: 60%;
 	  margin: 0 auto;
