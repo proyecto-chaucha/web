@@ -1,11 +1,9 @@
 body {
 	 font-size: 16px;
-	 font-family: 'Prompt', sans-serif;
 	 text-align: center;
 	 background-color: #f8faff;
 }
  .cha-button {
-	 font-family: 'Prompt', sans-serif;
 	 display: inline-block;
 	 font-size: 1em;
 	 padding: 1em 2em;
@@ -13,14 +11,14 @@ body {
 	 margin-bottom: 60px;
 	 -webkit-appearance: none;
 	 appearance: none;
-	 background-color: #505C5E;
+	 background-color: #00d1b2c2;
 	 color: #fff;
 	 border-radius: 4px;
 	 border: none;
 	 cursor: pointer;
 	 position: relative;
 	 transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-	 box-shadow: 0 2px 25px rgba(80,92,94);
+	 box-shadow: 0 2px 25px  #00d1b2c2;
 }
  .cha-button:focus {
 	 outline: 0;
@@ -48,7 +46,7 @@ body {
 }
  .cha-button:active {
 	 transform: scale(0.9);
-	 background-color: #505C5E;
+	 background-color: #007bff;
 	 box-shadow: 0 2px 25px rgba(80,92,94);
 }
  .cha-button.animate:before {
